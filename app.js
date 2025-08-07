@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'lundi-lunch-s1',
                             day: 'Lundi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Salade de thon sur pain tranché',
                             prepTime: '10 minutes',
                             cookTime: '0 minutes',
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'lundi-dinner-s1',
                             day: 'Lundi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Spaghetti aux Boulettes',
                             prepTime: '10 minutes',
                             cookTime: '20 minutes',
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mardi-lunch-s1',
                             day: 'Mardi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Riz Dante et Pois et Carottes',
                             prepTime: '5 minutes',
                             cookTime: '15 minutes',
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mardi-dinner-s1',
                             day: 'Mardi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Saucisses italiennes douces avec Knorr Sidekicks Pâtes poulet et Cheddar',
                             prepTime: '10 minutes',
                             cookTime: '20 minutes',
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mercredi-lunch-s1',
                             day: 'Mercredi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Pâté Chinois (Version Rapide)',
                             prepTime: '5 minutes',
                             cookTime: '20 minutes',
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mercredi-dinner-s1',
                             day: 'Mercredi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Mini Pizza sur pain naan',
                             prepTime: '5 minutes',
                             cookTime: '5 minutes',
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'jeudi-lunch-s1',
                             day: 'Jeudi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Restes de Mini Pizza sur pain naan',
                             prepTime: '5 minutes',
                             cookTime: '5 minutes',
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'jeudi-dinner-s1',
                             day: 'Jeudi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Bœuf haché avec Ketchup et Pommes de Terre en dés (restes)',
                             prepTime: '0 minutes',
                             cookTime: '10 minutes',
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'vendredi-lunch-s1',
                             day: 'Vendredi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Pâté Chinois (Version Rapide) - Reste',
                             prepTime: '5 minutes',
                             cookTime: '10-15 minutes',
@@ -262,7 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'vendredi-dinner-s1',
                             day: 'Vendredi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Tortillas au Jambon et Fromage',
                             prepTime: '5 minutes',
                             cookTime: '0 minutes',
@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'lundi-lunch-s2',
                             day: 'Lundi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Restes de Quiche',
                             prepTime: '0 minutes',
                             cookTime: '10 minutes',
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'lundi-dinner-s2',
                             day: 'Lundi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Bœuf Haché avec Ketchup et Pommes de Terre en dés',
                             prepTime: '5 minutes',
                             cookTime: '20 minutes',
@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mardi-lunch-s2',
                             day: 'Mardi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Spaghetti aux Boulettes (restes)',
                             prepTime: '0 minutes',
                             cookTime: '10 minutes',
@@ -378,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mardi-dinner-s2',
                             day: 'Mardi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Saucisses Hygrade et Pâtes au Fromage',
                             prepTime: '5 minutes',
                             cookTime: '15 minutes',
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mercredi-lunch-s2',
                             day: 'Mercredi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Pâté à la viande (version rapide) - Reste',
                             prepTime: '5 minutes',
                             cookTime: '20-25 minutes',
@@ -437,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mercredi-dinner-s2',
                             day: 'Mercredi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Soupe Minestrone et Croûtons',
                             prepTime: '5 minutes',
                             cookTime: '10 minutes',
@@ -468,7 +468,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'jeudi-lunch-s2',
                             day: 'Jeudi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Pâté Chinois (Version Rapide)',
                             prepTime: '5 minutes',
                             cookTime: '20 minutes',
@@ -495,7 +495,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'jeudi-dinner-s2',
                             day: 'Jeudi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Mini Pizza sur pain naan',
                             prepTime: '5 minutes',
                             cookTime: '5 minutes',
@@ -528,7 +528,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'vendredi-lunch-s2',
                             day: 'Vendredi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Restes de mini pizza sur pain naan',
                             prepTime: '0 minutes',
                             cookTime: '5 minutes',
@@ -551,7 +551,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'vendredi-dinner-s2',
                             day: 'Vendredi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Pâté Chinois (Version Rapide) - Reste',
                             prepTime: '5 minutes',
                             cookTime: '10-15 minutes',
@@ -584,7 +584,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'lundi-lunch-s3',
                             day: 'Lundi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Restes de Saucisses italiennes',
                             prepTime: '0 minutes',
                             cookTime: '10 minutes',
@@ -607,7 +607,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'lundi-dinner-s3',
                             day: 'Lundi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Soupe Minestrone et Croûtons',
                             prepTime: '5 minutes',
                             cookTime: '10 minutes',
@@ -638,7 +638,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mardi-lunch-s3',
                             day: 'Mardi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Reste de soupe Minestrone',
                             prepTime: '0 minutes',
                             cookTime: '10 minutes',
@@ -662,7 +662,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mardi-dinner-s3',
                             day: 'Mardi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Tortillas au Jambon et Fromage',
                             prepTime: '5 minutes',
                             cookTime: '0 minutes',
@@ -695,7 +695,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mercredi-lunch-s3',
                             day: 'Mercredi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Pâté à la viande (version rapide)',
                             prepTime: '5 minutes',
                             cookTime: '20-25 minutes',
@@ -722,7 +722,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mercredi-dinner-s3',
                             day: 'Mercredi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Spaghetti aux Boulettes',
                             prepTime: '10 minutes',
                             cookTime: '20 minutes',
@@ -754,7 +754,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'jeudi-lunch-s3',
                             day: 'Jeudi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Restes de Quiche aux légumes et fromage',
                             prepTime: '0 minutes',
                             cookTime: '10 minutes',
@@ -777,7 +777,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'jeudi-dinner-s3',
                             day: 'Jeudi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Saucisses Hygrade et Pâtes au Fromage',
                             prepTime: '5 minutes',
                             cookTime: '15 minutes',
@@ -809,7 +809,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'vendredi-lunch-s3',
                             day: 'Vendredi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Restes de pâté à la viande',
                             prepTime: '0 minutes',
                             cookTime: '10 minutes',
@@ -832,7 +832,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'vendredi-dinner-s3',
                             day: 'Vendredi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Pâté Chinois (Version Rapide) - Reste',
                             prepTime: '5 minutes',
                             cookTime: '10-15 minutes',
@@ -865,7 +865,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'lundi-lunch-s4',
                             day: 'Lundi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Tortillas au Jambon et Fromage',
                             prepTime: '5 minutes',
                             cookTime: '0 minutes',
@@ -893,7 +893,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'lundi-dinner-s4',
                             day: 'Lundi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Saucisses Hygrade et Pâtes au Fromage',
                             prepTime: '5 minutes',
                             cookTime: '15 minutes',
@@ -925,7 +925,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mardi-lunch-s4',
                             day: 'Mardi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Riz Dante et Pois et Carottes',
                             prepTime: '5 minutes',
                             cookTime: '15 minutes',
@@ -953,7 +953,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mardi-dinner-s4',
                             day: 'Mardi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Spaghetti aux Boulettes',
                             prepTime: '10 minutes',
                             cookTime: '20 minutes',
@@ -985,7 +985,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mercredi-lunch-s4',
                             day: 'Mercredi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Salade de thon sur pain tranché',
                             prepTime: '10 minutes',
                             cookTime: '0 minutes',
@@ -1012,7 +1012,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'mercredi-dinner-s4',
                             day: 'Mercredi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Saucisses italiennes douces avec Knorr Sidekicks Pâtes poulet et Cheddar',
                             prepTime: '10 minutes',
                             cookTime: '20 minutes',
@@ -1043,7 +1043,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'jeudi-lunch-s4',
                             day: 'Jeudi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Pâté à la viande (version rapide)',
                             prepTime: '5 minutes',
                             cookTime: '20-25 minutes',
@@ -1070,7 +1070,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'jeudi-dinner-s4',
                             day: 'Jeudi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Pâté Chinois (Version Rapide) - Reste',
                             prepTime: '5 minutes',
                             cookTime: '10-15 minutes',
@@ -1098,7 +1098,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'vendredi-lunch-s4',
                             day: 'Vendredi',
-                            meal: 'Lunch',
+                            meal: 'Déjeuner',
                             title: 'Mini pizza sur pain naan - Reste',
                             prepTime: '5 minutes',
                             cookTime: '5 minutes',
@@ -1121,7 +1121,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         {
                             id: 'vendredi-dinner-s4',
                             day: 'Vendredi',
-                            meal: 'Dîner',
+                            meal: 'Souper',
                             title: 'Soupe Minestrone et Croûtons',
                             prepTime: '5 minutes',
                             cookTime: '10 minutes',
@@ -1158,6 +1158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const weekNavContainer = document.getElementById('week-nav');
 
     let currentWeek = 0; // Index de la semaine affichée
+    let cardCount = 0; // Compteur de cartes pour les couleurs
 
     function createWeekNav() {
         weekNavContainer.innerHTML = '';
@@ -1188,8 +1189,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderWeek(weekIndex) {
         recipesContainer.innerHTML = '';
         const week = weeksData[weekIndex];
-
-        // Créer un conteneur pour la section de la semaine
         const weekSection = document.createElement('div');
         weekSection.className = 'week-section';
         const weekTitle = document.createElement('h2');
@@ -1200,24 +1199,21 @@ document.addEventListener('DOMContentLoaded', () => {
         week.days.forEach(day => {
             const daySection = document.createElement('div');
             daySection.className = 'day-section';
-            
-            // Pour l'affichage, vous pouvez utiliser la classe de jour pour la couleur
-            const dayClass = `card-${day.day.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace('é', 'e')}`;
-            daySection.classList.add(dayClass);
-
             const dayTitle = document.createElement('h3');
             dayTitle.textContent = day.day;
             daySection.appendChild(dayTitle);
-            
+
             const recipesGrid = document.createElement('div');
             recipesGrid.className = 'recipes-grid';
 
             day.meals.forEach(meal => {
                 const recipeCard = document.createElement('div');
                 recipeCard.className = 'recipe-card';
-                // Ajout de la classe de repas
-                const mealClass = `card-${meal.meal.toLowerCase().replace('dîner', 'dinner')}`;
-                recipeCard.classList.add(mealClass);
+                
+                // Nouvelle logique pour les couleurs
+                const colorIndex = (cardCount % 6) + 1; // 6 est le nombre de couleurs que vous avez définies
+                recipeCard.classList.add(`card-color-${colorIndex}`);
+                cardCount++;
 
                 recipeCard.innerHTML = `
                     <h3>${meal.title}</h3>
@@ -1232,6 +1228,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 recipesGrid.appendChild(recipeCard);
             });
+
             daySection.appendChild(recipesGrid);
             recipesContainer.appendChild(daySection);
         });
