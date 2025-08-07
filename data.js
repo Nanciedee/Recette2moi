@@ -1071,285 +1071,295 @@ const allRecipes = [
         ]
     },
     {
-        week: 'Semaine 4',
-        days: [
+        "week": "Semaine 4",
+        "days": [
             {
-                day: 'Lundi',
-                meals: [
+                "day": "Lundi",
+                "meals": [
                     {
-                        id: 'lundi-lunch-s4',
-                        meal: 'Lunch',
-                        title: 'Tortillas au Jambon et Fromage',
-                        prepTime: '5 minutes',
-                        cookTime: '0 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '3 tortillas',
-                            'Jambon cuit (environ 80g)',
-                            'Fromage en tranches (environ 60g)',
-                            'Mayonnaise (environ 10g, optionnel)'
+                        "id": "lundi-lunch-s4",
+                        "day": "Lundi",
+                        "meal": "Lunch",
+                        "title": "Tortillas au Jambon et Fromage",
+                        "prepTime": "5 minutes",
+                        "cookTime": "0 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "3 tortillas",
+                            "Jambon cuit (environ 80g)",
+                            "Fromage en tranches (environ 60g)",
+                            "Mayonnaise (environ 10g, optionnel)"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Étalez les tortillas. Tartinez de mayonnaise si désiré.",
                             "Garnissez de jambon et de fromage.",
                             "Roulez fermement et coupez en deux avant de servir."
                         ],
-                        nutrition: {
-                            calories: '~300 kcal',
-                            proteins: '~18g',
-                            carbs: '~25g',
-                            fats: '~15g',
-                            fibers: '~1g',
-                            sodium: '~700 mg'
+                        "nutrition": {
+                            "calories": "~300 kcal",
+                            "proteins": "~18g",
+                            "carbs": "~25g",
+                            "fats": "~15g",
+                            "fibers": "~1g",
+                            "sodium": "~700 mg"
                         }
                     },
                     {
-                        id: 'lundi-dinner-s4',
-                        meal: 'Dîner',
-                        title: 'Saucisses Hygrade et Pâtes au Fromage',
-                        prepTime: '5 minutes',
-                        cookTime: '15 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '6 saucisses Hygrade',
-                            '1 boîte de 225g de Macaroni au fromage Kraft Dinner',
-                            'Lait et beurre (selon instructions du paquet)'
+                        "id": "lundi-dinner-s4",
+                        "day": "Lundi",
+                        "meal": "Dîner",
+                        "title": "Saucisses Hygrade et Pâtes au Fromage",
+                        "prepTime": "5 minutes",
+                        "cookTime": "15 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "6 saucisses Hygrade",
+                            "1 boîte de 225g de Macaroni au fromage Kraft Dinner",
+                            "Lait et beurre (selon instructions du paquet)"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Faites cuire les saucisses Hygrade dans une poêle. Coupez-les en rondelles.",
                             "Préparez le macaroni au fromage Kraft Dinner selon les instructions du paquet.",
                             "Mélangez les rondelles de saucisses au macaroni au fromage et servez chaud."
                         ],
-                        nutrition: {
-                            calories: '~500 kcal',
-                            proteins: '~20g',
-                            carbs: '~50g',
-                            fats: '~25g',
-                            fibers: '~2g',
-                            sodium: '~900 mg'
+                        "nutrition": {
+                            "calories": "~500 kcal",
+                            "proteins": "~20g",
+                            "carbs": "~50g",
+                            "fats": "~25g",
+                            "fibers": "~2g",
+                            "sodium": "~900 mg"
                         }
                     }
                 ]
             },
             {
-                day: 'Mardi',
-                meals: [
+                "day": "Mardi",
+                "meals": [
                     {
-                        id: 'mardi-lunch-s4',
-                        meal: 'Lunch',
-                        title: 'Riz Dante et Pois et Carottes',
-                        prepTime: '5 minutes',
-                        cookTime: '15 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '200g de riz Dante',
-                            '1 canne de 398ml de pois et carottes',
-                            'Beurre (optionnel)',
-                            'Sel et poivre'
+                        "id": "mardi-lunch-s4",
+                        "day": "Mardi",
+                        "meal": "Lunch",
+                        "title": "Riz Dante et Pois et Carottes",
+                        "prepTime": "5 minutes",
+                        "cookTime": "15 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "200g de riz Dante",
+                            "1 canne de 398ml de pois et carottes",
+                            "Beurre (optionnel)",
+                            "Sel et poivre"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Faites cuire le riz Dante selon les instructions du paquet.",
                             "Égouttez les pois et carottes et faites-les chauffer. Ajoutez du beurre si désiré.",
                             "Servez le riz avec les légumes."
                         ],
-                        nutrition: {
-                            calories: '~350 kcal',
-                            proteins: '~8g',
-                            carbs: '~70g',
-                            fats: '~5g',
-                            fibers: '~6g',
-                            sodium: '~250 mg'
+                        "nutrition": {
+                            "calories": "~350 kcal",
+                            "proteins": "~8g",
+                            "carbs": "~70g",
+                            "fats": "~5g",
+                            "fibers": "~6g",
+                            "sodium": "~250 mg"
                         }
                     },
                     {
-                        id: 'mardi-dinner-s4',
-                        meal: 'Dîner',
-                        title: 'Spaghetti aux Boulettes',
-                        prepTime: '10 minutes',
-                        cookTime: '20 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '200g de spaghetti',
-                            '8 mini boulettes de bœuf',
-                            '1 canne de 680ml de sauce pour pâtes Primo'
+                        "id": "mardi-dinner-s4",
+                        "day": "Mardi",
+                        "meal": "Dîner",
+                        "title": "Spaghetti aux Boulettes",
+                        "prepTime": "10 minutes",
+                        "cookTime": "20 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "200g de spaghetti",
+                            "8 mini boulettes de bœuf",
+                            "1 canne de 680ml de sauce pour pâtes Primo"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Faites cuire les spaghettis. Égouttez.",
                             "Faites chauffer les boulettes dans la sauce pour pâtes Primo.",
                             "Servez les spaghettis avec les boulettes et la sauce."
                         ],
-                        nutrition: {
-                            calories: '~480 kcal',
-                            proteins: '~25g',
-                            carbs: '~60g',
-                            fats: '~15g',
-                            fibers: '~5g',
-                            sodium: '~700 mg'
+                        "nutrition": {
+                            "calories": "~480 kcal",
+                            "proteins": "~25g",
+                            "carbs": "~60g",
+                            "fats": "~15g",
+                            "fibers": "~5g",
+                            "sodium": "~700 mg"
                         }
                     }
                 ]
             },
             {
-                day: 'Mercredi',
-                meals: [
+                "day": "Mercredi",
+                "meals": [
                     {
-                        id: 'mercredi-lunch-s4',
-                        meal: 'Lunch',
-                        title: 'Salade de thon sur pain tranché',
-                        prepTime: '10 minutes',
-                        cookTime: '0 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '1 canne de 170g de thon en conserve',
-                            'Mayonnaise (environ 40g)',
-                            'Pain tranché blanc (6 tranches)',
-                            'Céleri coupé en dés (environ 1 c. à soupe)'
+                        "id": "mercredi-lunch-s4",
+                        "day": "Mercredi",
+                        "meal": "Lunch",
+                        "title": "Salade de thon sur pain tranché",
+                        "prepTime": "10 minutes",
+                        "cookTime": "0 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "1 canne de 170g de thon en conserve",
+                            "Mayonnaise (environ 40g)",
+                            "Pain tranché blanc (6 tranches)",
+                            "Céleri coupé en dés (environ 1 c. à soupe)"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Égouttez le thon et mélangez-le avec la mayonnaise et le céleri.",
                             "Étalez la salade de thon sur les tranches de pain."
                         ],
-                        nutrition: {
-                            calories: '~300 kcal',
-                            proteins: '~18g',
-                            carbs: '~25g',
-                            fats: '~15g',
-                            fibers: '~1g',
-                            sodium: '~500 mg'
+                        "nutrition": {
+                            "calories": "~300 kcal",
+                            "proteins": "~18g",
+                            "carbs": "~25g",
+                            "fats": "~15g",
+                            "fibers": "~1g",
+                            "sodium": "~500 mg"
                         }
                     },
                     {
-                        id: 'mercredi-dinner-s4',
-                        meal: 'Dîner',
-                        title: 'Saucisses italiennes douces avec Knorr Sidekicks Pâtes poulet et Cheddar',
-                        prepTime: '10 minutes',
-                        cookTime: '20 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '3 saucisses italiennes douces',
-                            '1 sachet Knorr Sidekicks Pâtes poulet et Cheddar'
+                        "id": "mercredi-dinner-s4",
+                        "day": "Mercredi",
+                        "meal": "Dîner",
+                        "title": "Saucisses italiennes douces avec Knorr Sidekicks Pâtes poulet et Cheddar",
+                        "prepTime": "10 minutes",
+                        "cookTime": "20 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "3 saucisses italiennes douces",
+                            "1 sachet Knorr Sidekicks Pâtes poulet et Cheddar"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Faites cuire les saucisses et coupez-les en rondelles.",
                             "Préparez les pâtes Sidekicks.",
                             "Mélangez les saucisses et les pâtes ensemble."
                         ],
-                        nutrition: {
-                            calories: '~550 kcal',
-                            proteins: '~28g',
-                            carbs: '~45g',
-                            fats: '~30g',
-                            fibers: '~3g',
-                            sodium: '~950 mg'
+                        "nutrition": {
+                            "calories": "~550 kcal",
+                            "proteins": "~28g",
+                            "carbs": "~45g",
+                            "fats": "~30g",
+                            "fibers": "~3g",
+                            "sodium": "~950 mg"
                         }
                     }
                 ]
             },
             {
-                day: 'Jeudi',
-                meals: [
+                "day": "Jeudi",
+                "meals": [
                     {
-                        id: 'jeudi-lunch-s4',
-                        meal: 'Lunch',
-                        title: 'Pâté à la viande (version rapide)',
-                        prepTime: '5 minutes',
-                        cookTime: '20-25 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '1 galette de bœuf haché',
-                            '1 canne de 398ml de sauce à la viande',
-                            '1 pâte à tarte (non cuite)'
+                        "id": "jeudi-lunch-s4",
+                        "day": "Jeudi",
+                        "meal": "Lunch",
+                        "title": "Pâté à la viande (version rapide)",
+                        "prepTime": "5 minutes",
+                        "cookTime": "20-25 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "1 galette de bœuf haché",
+                            "1 canne de 398ml de sauce à la viande",
+                            "1 pâte à tarte (non cuite)"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Faites cuire la galette de bœuf haché et émiettez-la.",
                             "Mélangez la viande et la sauce. Versez dans la pâte à tarte.",
                             "Enfournez à 180°C (350°F) jusqu'à ce que la pâte soit dorée."
                         ],
-                        nutrition: {
-                            calories: '~450 kcal',
-                            proteins: '~15g',
-                            carbs: '~40g',
-                            fats: '~25g',
-                            fibers: '~2g',
-                            sodium: '~800 mg'
+                        "nutrition": {
+                            "calories": "~450 kcal",
+                            "proteins": "~15g",
+                            "carbs": "~40g",
+                            "fats": "~25g",
+                            "fibers": "~2g",
+                            "sodium": "~800 mg"
                         }
                     },
                     {
-                        id: 'jeudi-dinner-s4',
-                        meal: 'Dîner',
-                        title: 'Pâté Chinois (Version Rapide) - Reste',
-                        prepTime: '5 minutes',
-                        cookTime: '10-15 minutes',
-                        portions: '3',
-                        ingredients: [
-                            'Reste de pâté chinois'
+                        "id": "jeudi-dinner-s4",
+                        "day": "Jeudi",
+                        "meal": "Dîner",
+                        "title": "Pâté Chinois (Version Rapide) - Reste",
+                        "prepTime": "5 minutes",
+                        "cookTime": "10-15 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "Reste de pâté chinois"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Réchauffez le reste du pâté chinois au four ou au micro-ondes."
                         ],
-                        nutrition: {
-                            calories: '~450 kcal',
-                            proteins: '~20g',
-                            carbs: '~50g',
-                            fats: '~18g',
-                            fibers: '~6g',
-                            sodium: '~650 mg'
+                        "nutrition": {
+                            "calories": "~450 kcal",
+                            "proteins": "~20g",
+                            "carbs": "~50g",
+                            "fats": "~18g",
+                            "fibers": "~6g",
+                            "sodium": "~650 mg"
                         }
                     }
                 ]
             },
             {
-                day: 'Vendredi',
-                meals: [
+                "day": "Vendredi",
+                "meals": [
                     {
-                        id: 'vendredi-lunch-s4',
-                        meal: 'Lunch',
-                        title: 'Mini pizza sur pain naan - Reste',
-                        prepTime: '5 minutes',
-                        cookTime: '5 minutes',
-                        portions: '3',
-                        ingredients: [
-                            'Reste de mini pizza'
+                        "id": "vendredi-lunch-s4",
+                        "day": "Vendredi",
+                        "meal": "Lunch",
+                        "title": "Mini pizza sur pain naan - Reste",
+                        "prepTime": "5 minutes",
+                        "cookTime": "5 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "Reste de mini pizza"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Réchauffez les mini pizzas au four ou au micro-ondes."
                         ],
-                        nutrition: {
-                            calories: '~400 kcal',
-                            proteins: '~20g',
-                            carbs: '~40g',
-                            fats: '~18g',
-                            fibers: '~2g',
-                            sodium: '~700 mg'
+                        "nutrition": {
+                            "calories": "~400 kcal",
+                            "proteins": "~20g",
+                            "carbs": "~40g",
+                            "fats": "~18g",
+                            "fibers": "~2g",
+                            "sodium": "~700 mg"
                         }
                     },
                     {
-                        id: 'vendredi-dinner-s4',
-                        meal: 'Dîner',
-                        title: 'Soupe Minestrone et Croûtons',
-                        prepTime: '5 minutes',
-                        cookTime: '10 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '1 canne de 540ml de soupe Minestrone',
-                            'Eau (1 canne)',
-                            'Croûtons'
+                        "id": "vendredi-dinner-s4",
+                        "day": "Vendredi",
+                        "meal": "Dîner",
+                        "title": "Soupe Minestrone et Croûtons",
+                        "prepTime": "5 minutes",
+                        "cookTime": "10 minutes",
+                        "portions": "3",
+                        "ingredients": [
+                            "1 canne de 540ml de soupe Minestrone",
+                            "Eau (1 canne)",
+                            "Croûtons"
                         ],
-                        instructions: [
+                        "instructions": [
                             "Préparez la soupe Minestrone selon les instructions de la canne.",
                             "Servez chaud avec des croûtons."
                         ],
-                        nutrition: {
-                            calories: '~200 kcal',
-                            proteins: '~8g',
-                            carbs: '~30g',
-                            fats: '~5g',
-                            fibers: '~5g',
-                            sodium: '~750 mg'
+                        "nutrition": {
+                            "calories": "~200 kcal",
+                            "proteins": "~8g",
+                            "carbs": "~30g",
+                            "fats": "~5g",
+                            "fibers": "~5g",
+                            "sodium": "~750 mg"
                         }
                     }
                 ]
             }
         ]
     }
-];
+]
