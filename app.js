@@ -3,11 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('recipe-modal');
     const modalContent = document.getElementById('recipe-details');
     const closeButton = document.querySelector('.close-button');
+    const recipesContainer = document.querySelector('main');
 
-    // On récupère le conteneur principal
-    const recipesContainer = document.querySelector('main'); 
-
-    // Fonction pour créer une carte de recette dans la grille
+    // Fonction pour créer une carte de recette
     function createRecipeCard(recipe) {
         const card = document.createElement('div');
         card.classList.add('recipe-card');
@@ -15,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <h3>${recipe.title}</h3>
             <p><strong>${recipe.day}</strong> - ${recipe.meal}</p>
         `;
-        // On vérifie que la fonction existe avant de l'appeler.
         card.addEventListener('click', () => showRecipeDetails(recipe));
         return card;
     }
@@ -39,30 +36,35 @@ document.addEventListener('DOMContentLoaded', () => {
             <ol>
                 ${recipe.instructions.map(step => `<li>${step}</li>`).join('')}
             </ol>
+
+            <h3>Valeurs nutritionnelles (approximatives)</h3>
+            <ul>
+                <li><strong>Calories :</strong> ${recipe.nutrition.calories}</li>
+                <li><strong>Protéines :</strong> ${recipe.nutrition.proteins}</li>
+                <li><strong>Glucides :</strong> ${recipe.nutrition.carbs}</li>
+                <li><strong>Lipides :</strong> ${recipe.nutrition.fats}</li>
+                <li><strong>Fibres :</strong> ${recipe.nutrition.fibers}</li>
+                <li><strong>Sodium :</strong> ${recipe.nutrition.sodium}</li>
+            </ul>
         `;
-        modal.style.display = 'flex'; // Afficher la modale
+        modal.style.display = 'flex';
     }
 
-    // Fonction pour fermer la modale
+    // Gestionnaires d'événements pour la modale
     closeButton.addEventListener('click', () => {
         modal.style.display = 'none';
     });
-
-    // Fermer la modale si l'utilisateur clique en dehors
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
         }
     });
 
-    // C'est ici que l'on génère toutes les cartes de recettes.
-    // On s'assure que le tableau allRecipes existe avant de l'utiliser.
+    // Génération du contenu à partir de la variable allRecipes
     if (typeof allRecipes !== 'undefined' && allRecipes.length > 0) {
         allRecipes.forEach(week => {
-            // Création du titre pour la semaine (Semaine 1, Semaine 2, etc.)
             const weekTitle = document.createElement('h2');
             weekTitle.textContent = week.week;
-            // On l'insère avant la grille de recettes.
             recipesContainer.insertBefore(weekTitle, recipesGrid);
 
             week.days.forEach(day => {
