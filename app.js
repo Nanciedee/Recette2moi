@@ -52,9 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Construire la grille de recettes
-    recipes.forEach(recipe => {
-        recipesGrid.appendChild(createRecipeCard(recipe));
+    // par ce nouveau code :
+allRecipes.forEach(week => {
+    week.days.forEach(day => {
+        day.meals.forEach(recipe => {
+            recipesGrid.appendChild(createRecipeCard(recipe));
+        });
     });
 });
 
