@@ -8,12 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function createRecipeCard(recipe) {
         const card = document.createElement('div');
         card.classList.add('recipe-card');
-
-        // Ajout des classes de couleur basées sur le repas et le jour
-        const mealClass = `card-${recipe.meal.toLowerCase().replace(/ /g, '-')}`;
-        const dayClass = `card-${recipe.day.toLowerCase()}`;
-        card.classList.add(mealClass, dayClass);
-        
         card.innerHTML = `
             <h3>${recipe.title}</h3>
             <p><strong>${recipe.day}</strong> - ${recipe.meal}</p>
