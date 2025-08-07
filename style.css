@@ -175,3 +175,19 @@ h1 {
     padding: 0.5rem;
     border-radius: 4px;
 }
+
+.planification-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7a260; /* Une couleur pour le bouton */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.planification-btn:hover {
+    background-color: #e09452; /* Couleur plus foncée au survol */
+}
