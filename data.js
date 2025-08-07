@@ -195,38 +195,38 @@ const allRecipes = [
                 ]
             },
             {
-                id: 'jeudi-lunch',
-                day: 'Jeudi',
-                meal: 'Lunch',
-                title: 'Salade de Saumon en Conserve avec Concombre et Tomates',
-                prepTime: '10 minutes',
-                cookTime: '0 minutes',
-                portions: '3',
-                ingredients: [
-                    '1 canne de 213g de saumon rose en conserve',
-                    '1/2 concombre (coupé en dés)',
-                    '1/2 tomate (coupée en dés)',
-                    'Mayonnaise (environ 30g)',
-                    'Sel et poivre au goût'
-                ],
-                instructions: [
-                    "Égouttez le saumon. Dans un bol, émiettez le saumon avec une fourchette.",
-                    "Coupez le concombre et la tomate en dés. Ajoutez-les au saumon.",
-                    "Incorporez la mayonnaise. Salez et poivrez. Mélangez bien.",
-                    "Servez la salade de saumon sur des feuilles de salade ou avec des biscuits."
-                ],
-                nutrition: {
-                    calories: '~250 kcal',
-                    proteins: '~20g',
-                    carbs: '~10g',
-                    fats: '~15g',
-                    fibers: '~1g',
-                    sodium: '~450 mg'
-                }
-            },
-            {
                 day: 'Jeudi',
                 meals: [
+                    {
+                        id: 'jeudi-lunch',
+                        day: 'Jeudi',
+                        meal: 'Lunch',
+                        title: 'Salade de Saumon en Conserve avec Concombre et Tomates',
+                        prepTime: '10 minutes',
+                        cookTime: '0 minutes',
+                        portions: '3',
+                        ingredients: [
+                            '1 canne de 213g de saumon rose en conserve',
+                            '1/2 concombre (coupé en dés)',
+                            '1/2 tomate (coupée en dés)',
+                            'Mayonnaise (environ 30g)',
+                            'Sel et poivre au goût'
+                        ],
+                        instructions: [
+                            "Égouttez le saumon. Dans un bol, émiettez le saumon avec une fourchette.",
+                            "Coupez le concombre et la tomate en dés. Ajoutez-les au saumon.",
+                            "Incorporez la mayonnaise. Salez et poivrez. Mélangez bien.",
+                            "Servez la salade de saumon sur des feuilles de salade ou avec des biscuits."
+                        ],
+                        nutrition: {
+                            calories: '~250 kcal',
+                            proteins: '~20g',
+                            carbs: '~10g',
+                            fats: '~15g',
+                            fibers: '~1g',
+                            sodium: '~450 mg'
+                        }
+                    },
                     {
                         id: 'jeudi-dinner',
                         day: 'Jeudi',
