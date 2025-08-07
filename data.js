@@ -466,20 +466,63 @@ const allRecipes = [
                 day: 'Lundi',
                 meals: [
                     {
-    id: 'lundi-lunch-s2',
-    day: 'Lundi', // AJOUTEZ CETTE LIGNE
-    meal: 'Lunch',
-    title: 'Sandwichs au Jambon à l\'Ancienne et Fromage Gouda',
-    // ... reste de la recette
-}
+                        id: 'lundi-lunch-s2',
+                        meal: 'Lunch',
+                        title: 'Sandwichs au Jambon à l\'Ancienne et Fromage Gouda',
+                        prepTime: '5 minutes',
+                        cookTime: '0 minutes',
+                        portions: '3',
+                        ingredients: [
+                            '150g de jambon cuit à l\'ancienne',
+                            'Pain tranché blanc (6 tranches)',
+                            'Fromage Gouda (environ 60g, tranché finement)',
+                            'Mayonnaise (environ 15g ou 1 c. à soupe, optionnel)'
+                        ],
+                        instructions: [
+                            "Tartinez légèrement de mayonnaise sur les tranches de pain si désiré.",
+                            "Disposez le jambon et le fromage Gouda sur trois tranches de pain.",
+                            "Recouvrez avec les trois autres tranches.",
+                            "Coupez les sandwichs en deux et servez immédiatement."
+                        ],
+                        nutrition: {
+                            calories: '~320 kcal',
+                            proteins: '~20g',
+                            carbs: '~25g',
+                            fats: '~15g',
+                            fibers: '~2g',
+                            sodium: '~700 mg'
+                        }
                     },
                     {
-    id: 'lundi-dinner-s2',
-    day: 'Lundi', // AJOUTEZ CETTE LIGNE
-    meal: 'Dîner',
-    title: 'Saucisses Italiennes Douces avec Pâtes Coudes et Sauce Alfredo Knorr',
-    // ... reste de la recette
-}
+                        id: 'lundi-dinner-s2',
+                        meal: 'Dîner',
+                        title: 'Saucisses Italiennes Douces avec Pâtes Coudes et Sauce Alfredo Knorr',
+                        prepTime: '10 minutes',
+                        cookTime: '20 minutes',
+                        portions: '3',
+                        ingredients: [
+                            '3 saucisses italiennes douces crues',
+                            '200g de pâtes coudes non cuites',
+                            '1 sachet Knorr Mélanges à Sauce pour Pâtes Alfredo (37g)',
+                            'Lait (environ 1/2 tasse, selon instructions du sachet)',
+                            'Beurre (environ 1 c. à soupe, selon instructions du sachet)',
+                            'Fromage râpé mozzarella (environ 20g, optionnel)'
+                        ],
+                        instructions: [
+                            "Dans une poêle, faites cuire les saucisses italiennes douces pendant 15-20 minutes, jusqu'à ce qu'elles soient cuites. Retirez-les et coupez-les en rondelles.",
+                            "Pendant ce temps, faites cuire les pâtes coudes selon les instructions du paquet. Égouttez-les.",
+                            "Dans une petite casserole, préparez la sauce Alfredo en fouettant le mélange Knorr avec le lait et le beurre. Portez à ébullition, puis laissez épaissir à feu doux.",
+                            "Ajoutez les pâtes égouttées et les rondelles de saucisses à la sauce. Mélangez bien.",
+                            "Servez chaud, garni de fromage râpé si désiré."
+                        ],
+                        nutrition: {
+                            calories: '~520 kcal',
+                            proteins: '~28g',
+                            carbs: '~45g',
+                            fats: '~25g',
+                            fibers: '~3g',
+                            sodium: '~850 mg'
+                        }
                     }
                 ]
             },
@@ -726,308 +769,6 @@ const allRecipes = [
                     }
                 ]
             }
-        ]
-    },
-    {
-        week: 'Semaine 3',
-        days: [
-            {
-                day: 'Lundi',
-                meals: [
-                    {
-                        id: 'lundi-lunch-s3',
-                        meal: 'Lunch',
-                        title: 'Soupe Minestrone avec Croûtons',
-                        prepTime: '5 minutes',
-                        cookTime: '10 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '1 canne de 540ml de soupe Minestrone',
-                            'Eau (1 canne)',
-                            'Croûtons à la saveur de l\'ail (environ 30g)'
-                        ],
-                        instructions: [
-                            "Dans une casserole, mélangez la soupe Minestrone et une canne d'eau.",
-                            "Faites chauffer à feu moyen en remuant de temps en temps.",
-                            "Portez à ébullition, puis réduisez le feu et laissez mijoter 5 minutes.",
-                            "Servez chaud avec des croûtons."
-                        ],
-                        nutrition: {
-                            calories: '~200 kcal',
-                            proteins: '~8g',
-                            carbs: '~30g',
-                            fats: '~5g',
-                            fibers: '~5g',
-                            sodium: '~750 mg'
-                        }
-                    },
-                    {
-                        id: 'lundi-dinner-s3',
-                        meal: 'Dîner',
-                        title: 'Pâté Chinois (Version Rapide)',
-                        prepTime: '10 minutes',
-                        cookTime: '15-20 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '1 canne de 398ml de maïs en crème',
-                            'Purée de pommes de terre instantanée (pour 3 portions)',
-                            'Eau et lait (selon les instructions de la purée)',
-                            'Galettes de bœuf haché (2 galettes)'
-                        ],
-                        instructions: [
-                            "Préparez la purée de pommes de terre selon les instructions du paquet.",
-                            "Pendant ce temps, émiettez et faites cuire les galettes de bœuf dans une poêle.",
-                            "Dans un plat allant au four, faites une couche de bœuf, une couche de maïs en crème et terminez par la purée de pommes de terre.",
-                            "Enfournez à 180°C (350°F) pendant 15-20 minutes."
-                        ],
-                        nutrition: {
-                            calories: '~450 kcal',
-                            proteins: '~20g',
-                            carbs: '~50g',
-                            fats: '~18g',
-                            fibers: '~6g',
-                            sodium: '~650 mg'
-                        }
-                    }
-                ]
-            },
-            {
-                day: 'Mardi',
-                meals: [
-                    {
-                        id: 'mardi-lunch-s3',
-                        meal: 'Lunch',
-                        title: 'Sandwichs à la Salade de Thon',
-                        prepTime: '10 minutes',
-                        cookTime: '0 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '1 canne de 170g de thon en conserve',
-                            'Mayonnaise (environ 40g)',
-                            'Pain tranché blanc (6 tranches)',
-                            'Céleri coupé en dés (environ 1 c. à soupe)',
-                            'Sel et poivre au goût'
-                        ],
-                        instructions: [
-                            "Égouttez le thon et émiettez-le dans un bol.",
-                            "Ajoutez la mayonnaise et le céleri. Salez et poivrez.",
-                            "Mélangez bien et étalez la salade de thon sur les tranches de pain.",
-                            "Servez immédiatement."
-                        ],
-                        nutrition: {
-                            calories: '~300 kcal',
-                            proteins: '~18g',
-                            carbs: '~25g',
-                            fats: '~15g',
-                            fibers: '~1g',
-                            sodium: '~500 mg'
-                        }
-                    },
-                    {
-                        id: 'mardi-dinner-s3',
-                        meal: 'Dîner',
-                        title: 'Pâté à la viande (version rapide)',
-                        prepTime: '5 minutes',
-                        cookTime: '20-25 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '1 galette de bœuf haché',
-                            '1 canne de 398ml de sauce à la viande',
-                            '1 pâte à tarte (non cuite)'
-                        ],
-                        instructions: [
-                            "Faites cuire la galette de bœuf haché et émiettez-la.",
-                            "Dans un bol, mélangez la viande et la sauce.",
-                            "Versez le mélange dans la pâte à tarte. Enfournez à 180°C (350°F) pendant 20-25 minutes, jusqu'à ce que la pâte soit dorée."
-                        ],
-                        nutrition: {
-                            calories: '~450 kcal',
-                            proteins: '~15g',
-                            carbs: '~40g',
-                            fats: '~25g',
-                            fibers: '~2g',
-                            sodium: '~800 mg'
-                        }
-                    }
-                ]
-            },
-            {
-                day: 'Mercredi',
-                meals: [
-                    {
-                        id: 'mercredi-lunch-s3',
-                        meal: 'Lunch',
-                        title: 'Riz Dante et Bœuf haché',
-                        prepTime: '5 minutes',
-                        cookTime: '15 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '200g de riz Dante',
-                            '1 galette de bœuf haché'
-                        ],
-                        instructions: [
-                            "Faites cuire le riz Dante selon les instructions du paquet.",
-                            "Pendant ce temps, faites cuire et émiettez le bœuf haché.",
-                            "Servez le riz avec le bœuf haché."
-                        ],
-                        nutrition: {
-                            calories: '~400 kcal',
-                            proteins: '~18g',
-                            carbs: '~50g',
-                            fats: '~15g',
-                            fibers: '~2g',
-                            sodium: '~300 mg'
-                        }
-                    },
-                    {
-                        id: 'mercredi-dinner-s3',
-                        meal: 'Dîner',
-                        title: 'Tacos Mous',
-                        prepTime: '10 minutes',
-                        cookTime: '5-10 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '3 tortillas',
-                            '1 galette de bœuf haché',
-                            'Salade',
-                            'Tomate coupée en dés',
-                            'Fromage râpé'
-                        ],
-                        instructions: [
-                            "Faites cuire et émiettez la galette de bœuf. Ajoutez les assaisonnements à tacos (facultatif).",
-                            "Préparez les garnitures. Réchauffez les tortillas.",
-                            "Remplissez les tortillas avec la viande et les garnitures."
-                        ],
-                        nutrition: {
-                            calories: '~350 kcal',
-                            proteins: '~20g',
-                            carbs: '~30g',
-                            fats: '~18g',
-                            fibers: '~3g',
-                            sodium: '~400 mg'
-                        }
-                    }
-                ]
-            },
-            {
-                day: 'Jeudi',
-                meals: [
-                    {
-                        id: 'jeudi-lunch-s3',
-                        meal: 'Lunch',
-                        title: 'Poulet BBQ avec salade',
-                        prepTime: '5 minutes',
-                        cookTime: '0 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '1/2 poulet BBQ cuit',
-                            'Salade',
-                            'Tomate',
-                            'Vinaigrette (optionnel)'
-                        ],
-                        instructions: [
-                            "Préparez la salade.",
-                            "Coupez le poulet en morceaux.",
-                            "Servez le poulet sur la salade avec la vinaigrette."
-                        ],
-                        nutrition: {
-                            calories: '~300 kcal',
-                            proteins: '~25g',
-                            carbs: '~10g',
-                            fats: '~18g',
-                            fibers: '~3g',
-                            sodium: '~350 mg'
-                        }
-                    },
-                    {
-                        id: 'jeudi-dinner-s3',
-                        meal: 'Dîner',
-                        title: 'Pâtes au pesto avec tomate',
-                        prepTime: '5 minutes',
-                        cookTime: '15 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '200g de pâtes Penne Rigate',
-                            'Sauce au pesto (environ 50g)',
-                            '1 tomate coupée en dés',
-                            'Fromage parmesan (optionnel)'
-                        ],
-                        instructions: [
-                            "Faites cuire les pâtes selon les instructions. Égouttez.",
-                            "Mélangez le pesto avec les pâtes chaudes.",
-                            "Ajoutez la tomate en dés et le parmesan si désiré."
-                        ],
-                        nutrition: {
-                            calories: '~450 kcal',
-                            proteins: '~15g',
-                            carbs: '~55g',
-                            fats: '~20g',
-                            fibers: '~4g',
-                            sodium: '~500 mg'
-                        }
-                    }
-                ]
-            },
-            {
-                day: 'Vendredi',
-                meals: [
-                    {
-                        id: 'vendredi-lunch-s3',
-                        meal: 'Lunch',
-                        title: 'Mini pizza sur pain naan',
-                        prepTime: '5 minutes',
-                        cookTime: '10 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '3 pains naan',
-                            'Sauce à pizza',
-                            'Pepperoni',
-                            'Fromage râpé mozzarella'
-                        ],
-                        instructions: [
-                            "Préchauffez le four. Étalez la sauce à pizza sur les pains naan.",
-                            "Garnissez de pepperoni et de fromage.",
-                            "Enfournez jusqu'à ce que le fromage soit fondu."
-                        ],
-                        nutrition: {
-                            calories: '~400 kcal',
-                            proteins: '~20g',
-                            carbs: '~40g',
-                            fats: '~18g',
-                            fibers: '~2g',
-                            sodium: '~700 mg'
-                        }
-                    },
-                    {
-                        id: 'vendredi-dinner-s3',
-                        meal: 'Dîner',
-                        title: 'Saucisses sur pain hot-dog',
-                        prepTime: '5 minutes',
-                        cookTime: '10 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '6 saucisses à hot-dog',
-                            '6 pains hot-dog',
-                            'Condiments (moutarde, ketchup, relish, etc.)'
-                        ],
-                        instructions: [
-                            "Faites cuire les saucisses dans une poêle ou à l'eau bouillante.",
-                            "Préparez les pains hot-dog. Assemblez et ajoutez les condiments."
-                        ],
-                        nutrition: {
-                            calories: '~400 kcal',
-                            proteins: '~15g',
-                            carbs: '~35g',
-                            fats: '~22g',
-                            fibers: '~2g',
-                            sodium: '~900 mg'
-                        }
-                    }
-                ]
-            }
-        ]
-    }
-];
         ]
     }
 ];
