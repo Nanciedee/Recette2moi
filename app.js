@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const recipesGrid = document.querySelector('.recipes-grid');
+    const mainContainer = document.getElementById('recipes-container');
     const modal = document.getElementById('recipe-modal');
     const modalContent = document.getElementById('recipe-details');
     const closeButton = document.querySelector('.close-button');
-    const recipesContainer = document.querySelector('main');
 
     // Fonction pour créer une carte de recette
     function createRecipeCard(recipe) {
@@ -63,17 +62,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // Génération du contenu à partir de la variable allRecipes
     if (typeof allRecipes !== 'undefined' && allRecipes.length > 0) {
         allRecipes.forEach(week => {
+            const weekSection = document.createElement('section');
+            weekSection.classList.add('week-section');
+
             const weekTitle = document.createElement('h2');
             weekTitle.textContent = week.week;
-            recipesContainer.insertBefore(weekTitle, recipesGrid);
+            weekSection.appendChild(weekTitle);
 
+            const recipesGrid = document.createElement('div');
+            recipesGrid.classList.add('recipes-grid');
+            
             week.days.forEach(day => {
                 day.meals.forEach(recipe => {
                     recipesGrid.appendChild(createRecipeCard(recipe));
                 });
             });
+
+            weekSection.appendChild(recipesGrid);
+            mainContainer.appendChild(weekSection);
         });
     } else {
-        recipesGrid.innerHTML = '<p>Aucune recette n\'a été trouvée.</p>';
+        mainContainer.innerHTML = '<p>Aucune recette n\'a été trouvée.</p>';
     }
 });
