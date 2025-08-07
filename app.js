@@ -1236,7 +1236,56 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showRecipeDetails(recipe) {
+    const modalDetails = document.getElementById('recipe-details');
+
     modalDetails.innerHTML = `
+        <style>
+            .modal-content {
+                background-color: #fff;
+                padding: 2.5rem;
+                border-radius: 15px;
+                width: 90%;
+                max-width: 800px;
+                position: relative;
+                max-height: 90vh;
+                overflow-y: auto;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+            #recipe-details h2 {
+                color: #4a69bd;
+                font-size: 2rem;
+                margin-top: 0;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+            #recipe-details h3 {
+                color: #6a89cc;
+                font-size: 1.5rem;
+                margin-top: 25px;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 5px;
+            }
+            #recipe-details p {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+            #recipe-details ul,
+            #recipe-details ol {
+                padding-left: 20px;
+                margin-top: 10px;
+            }
+            #recipe-details ul li,
+            #recipe-details ol li {
+                font-size: 1rem;
+                line-height: 1.4;
+                margin-bottom: 5px;
+                background-color: #f8f9fa;
+                border: 1px solid #e9ecef;
+                border-radius: 5px;
+                padding: 8px 12px;
+            }
+        </style>
         <h2>${recipe.title}</h2>
         <p><strong>Repas:</strong> ${recipe.meal}</p>
         <p><strong>Temps de préparation:</strong> ${recipe.prepTime}</p>
