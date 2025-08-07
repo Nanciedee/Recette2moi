@@ -1236,31 +1236,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showRecipeDetails(recipe) {
-        modalDetails.innerHTML = `
-            <h2>${recipe.title}</h2>
-            <p><strong>Repas:</strong> ${recipe.meal}</p>
-            <p><strong>Temps de préparation:</strong> ${recipe.prepTime}</p>
-            <p><strong>Temps de cuisson:</strong> ${recipe.cookTime}</p>
-            <p><strong>Portions:</strong> ${recipe.portions}</p>
-            
-            <h3>Ingrédients:</h3>
-            <ul>${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}</ul>
-            
-            <h3>Instructions:</h3>
-            <ol>${recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}</ol>
-            
-            <h3>Valeurs Nutritionnelles:</h3>
-            <ul>
-                <li><strong>Calories:</strong> ${recipe.nutrition.calories}</li>
-                <li><strong>Protéines:</strong> ${recipe.nutrition.proteins}</li>
-                <li><strong>Glucides:</strong> ${recipe.nutrition.carbs}</li>
-                <li><strong>Lipides:</strong> ${recipe.nutrition.fats}</li>
-                <li><strong>Fibres:</strong> ${recipe.nutrition.fibers}</li>
-                <li><strong>Sodium:</strong> ${recipe.nutrition.sodium}</li>
-            </ul>
-        `;
-        modal.style.display = 'flex';
-    }
+    modalDetails.innerHTML = `
+        <h2>${recipe.title}</h2>
+        <p><strong>Repas:</strong> ${recipe.meal}</p>
+        <p><strong>Temps de préparation:</strong> ${recipe.prepTime}</p>
+        <p><strong>Temps de cuisson:</strong> ${recipe.cookTime}</p>
+        <p><strong>Portions:</strong> ${recipe.portions}</p>
+        
+        <h3>Ingrédients :</h3>
+        <ul>
+            ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+        </ul>
+        
+        <h3>Instructions :</h3>
+        <ol>
+            ${recipe.instructions.map(instruction => `<li>${instruction}</li>`).join('')}
+        </ol>
+        
+        <h3>Valeurs Nutritionnelles :</h3>
+        <ul>
+            ${Object.keys(recipe.nutrition).map(key => `<li><strong>${key.charAt(0).toUpperCase() + key.slice(1)}:</strong> ${recipe.nutrition[key]}</li>`).join('')}
+        </ul>
+    `;
+    modal.style.display = 'flex';
+}
 
     closeModal.addEventListener('click', () => {
         modal.style.display = 'none';
