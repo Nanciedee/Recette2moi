@@ -466,63 +466,20 @@ const allRecipes = [
                 day: 'Lundi',
                 meals: [
                     {
-                        id: 'lundi-lunch-s2',
-                        meal: 'Lunch',
-                        title: 'Sandwichs au Jambon à l\'Ancienne et Fromage Gouda',
-                        prepTime: '5 minutes',
-                        cookTime: '0 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '150g de jambon cuit à l\'ancienne',
-                            'Pain tranché blanc (6 tranches)',
-                            'Fromage Gouda (environ 60g, tranché finement)',
-                            'Mayonnaise (environ 15g ou 1 c. à soupe, optionnel)'
-                        ],
-                        instructions: [
-                            "Tartinez légèrement de mayonnaise sur les tranches de pain si désiré.",
-                            "Disposez le jambon et le fromage Gouda sur trois tranches de pain.",
-                            "Recouvrez avec les trois autres tranches.",
-                            "Coupez les sandwichs en deux et servez immédiatement."
-                        ],
-                        nutrition: {
-                            calories: '~320 kcal',
-                            proteins: '~20g',
-                            carbs: '~25g',
-                            fats: '~15g',
-                            fibers: '~2g',
-                            sodium: '~700 mg'
-                        }
+    id: 'lundi-lunch-s2',
+    day: 'Lundi', // AJOUTEZ CETTE LIGNE
+    meal: 'Lunch',
+    title: 'Sandwichs au Jambon à l\'Ancienne et Fromage Gouda',
+    // ... reste de la recette
+}
                     },
                     {
-                        id: 'lundi-dinner-s2',
-                        meal: 'Dîner',
-                        title: 'Saucisses Italiennes Douces avec Pâtes Coudes et Sauce Alfredo Knorr',
-                        prepTime: '10 minutes',
-                        cookTime: '20 minutes',
-                        portions: '3',
-                        ingredients: [
-                            '3 saucisses italiennes douces crues',
-                            '200g de pâtes coudes non cuites',
-                            '1 sachet Knorr Mélanges à Sauce pour Pâtes Alfredo (37g)',
-                            'Lait (environ 1/2 tasse, selon instructions du sachet)',
-                            'Beurre (environ 1 c. à soupe, selon instructions du sachet)',
-                            'Fromage râpé mozzarella (environ 20g, optionnel)'
-                        ],
-                        instructions: [
-                            "Dans une poêle, faites cuire les saucisses italiennes douces pendant 15-20 minutes, jusqu'à ce qu'elles soient cuites. Retirez-les et coupez-les en rondelles.",
-                            "Pendant ce temps, faites cuire les pâtes coudes selon les instructions du paquet. Égouttez-les.",
-                            "Dans une petite casserole, préparez la sauce Alfredo en fouettant le mélange Knorr avec le lait et le beurre. Portez à ébullition, puis laissez épaissir à feu doux.",
-                            "Ajoutez les pâtes égouttées et les rondelles de saucisses à la sauce. Mélangez bien.",
-                            "Servez chaud, garni de fromage râpé si désiré."
-                        ],
-                        nutrition: {
-                            calories: '~520 kcal',
-                            proteins: '~28g',
-                            carbs: '~45g',
-                            fats: '~25g',
-                            fibers: '~3g',
-                            sodium: '~850 mg'
-                        }
+    id: 'lundi-dinner-s2',
+    day: 'Lundi', // AJOUTEZ CETTE LIGNE
+    meal: 'Dîner',
+    title: 'Saucisses Italiennes Douces avec Pâtes Coudes et Sauce Alfredo Knorr',
+    // ... reste de la recette
+}
                     }
                 ]
             },
