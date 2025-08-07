@@ -1,72 +1,173 @@
-/* Styles de base */
+:root {
+    /* Couleurs principales */
+    --main-bg-color: #f4f4f9;
+    --card-bg-color: #ffffff;
+    --text-color: #333;
+    --border-color: #ddd;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* Couleurs pour les repas */
+    --lunch-color: #b3e5fc; /* Bleu clair */
+    --dinner-color: #ffcdd2; /* Rouge clair */
+    --supper-color: #c8e6c9; /* Vert clair */
+
+    /* Couleurs pour les jours (teintes plus foncées) */
+    --lundi-color: #81d4fa;
+    --mardi-color: #e57373;
+    --mercredi-color: #a5d6a7;
+    --jeudi-color: #ffe082;
+    --vendredi-color: #ffab91;
+    --samedi-color: #90caf9;
+    --dimanche-color: #ce93d8;
+}
+
 body {
     font-family: sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f9;
+    padding: 0;
 }
 
 header {
+    background-color: #4a69bd;
+    color: white;
     text-align: center;
-    margin-bottom: 30px;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
 }
 
-/* Grille des cartes de recettes */
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.week-section {
+    margin-bottom: 3rem;
+}
+
+.week-section h2 {
+    font-size: 2rem;
+    color: #4a69bd;
+    border-bottom: 2px solid #4a69bd;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
 .recipes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .recipe-card {
-    background: #fff;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+    transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
 }
 
 .recipe-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Styles pour la modale (fiche détaillée) */
+.recipe-card h3 {
+    margin-top: 0;
+    font-size: 1.25rem;
+}
+
+.recipe-card p {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+}
+
+/* Styles pour les catégories de repas */
+.card-lunch {
+    background-color: var(--lunch-color);
+}
+.card-dinner {
+    background-color: var(--dinner-color);
+}
+/* Le user a mentionné "souper" mais vos données utilisent "Dîner", je l'ai inclus pour la flexibilité. */
+.card-supper {
+    background-color: var(--supper-color);
+}
+
+/* Styles pour les jours (teintes plus foncées) */
+.card-lundi { background-color: var(--lundi-color); }
+.card-mardi { background-color: var(--mardi-color); }
+.card-mercredi { background-color: var(--mercredi-color); }
+.card-jeudi { background-color: var(--jeudi-color); }
+.card-vendredi { background-color: var(--vendredi-color); }
+.card-samedi { background-color: var(--samedi-color); }
+.card-dimanche { background-color: var(--dimanche-color); }
+
+
+/* Styles de la modale */
 .modal {
-    display: none; /* Cachée par défaut */
+    display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
 }
 
 .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 800px;
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: 8px;
     width: 90%;
+    max-width: 700px;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .close-button {
     color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: #000;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#recipe-details h2 {
+    color: #4a69bd;
+}
+
+#recipe-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recipe-details ul li {
+    background-color: #f9f9f9;
+    border: 1px solid var(--border-color);
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
 }
