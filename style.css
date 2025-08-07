@@ -75,14 +75,14 @@ h1 {
 }
 
 .recipe-card {
-    background-color: var(--card-bg-color);
+    /* Suppression du background-color par défaut */
     border: 1px solid var(--border-color);
     border-radius: 15px; /* Arrondir les angles */
     padding: 1.5rem;
     box-shadow: 0 4px 8px var(--box-shadow-color);
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
-    text-align: center; /* Centrer le texte */
+    text-align: center;
 }
 
 .recipe-card:hover {
