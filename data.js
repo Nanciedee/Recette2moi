@@ -1028,3 +1028,6 @@ const allRecipes = [
         ]
     }
 ];
+        ]
+    }
+];
