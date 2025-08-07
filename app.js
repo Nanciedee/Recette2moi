@@ -614,7 +614,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             portions: '3',
                             ingredients: [
                                 '1 canne de 540ml de soupe Minestrone',
-                                'Eau (1 canne)',
+                            'Eau (1 canne)',
                                 'Croûtons'
                             ],
                             instructions: [
@@ -1128,7 +1128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             portions: '3',
                             ingredients: [
                                 '1 canne de 540ml de soupe Minestrone',
-                                'Eau (1 canne)',
+                            'Eau (1 canne)',
                                 'Croûtons'
                             ],
                             instructions: [
@@ -1158,7 +1158,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const weekNavContainer = document.getElementById('week-nav');
 
     let currentWeek = 0; // Index de la semaine affichée
-    let cardCount = 0; // Compteur de cartes pour les couleurs
+    
+    // Le compteur de cartes doit être global et non réinitialisé
+    let cardCount = 0;
 
     function createWeekNav() {
         weekNavContainer.innerHTML = '';
@@ -1210,7 +1212,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const recipeCard = document.createElement('div');
                 recipeCard.className = 'recipe-card';
                 
-                // Nouvelle logique pour les couleurs
                 const colorIndex = (cardCount % 6) + 1; // 6 est le nombre de couleurs que vous avez définies
                 recipeCard.classList.add(`card-color-${colorIndex}`);
                 cardCount++;
