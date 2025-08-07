@@ -19,6 +19,14 @@
     --vendredi-color: #ffab91;
     --samedi-color: #90caf9;
     --dimanche-color: #ce93d8;
+
+    /* Nouvelles couleurs pour les cartes */
+    --card-color-1: #f0a080; /* Corail */
+    --card-color-2: #e0b0e0; /* Lavande */
+    --card-color-3: #9ac2cc; /* Bleu-vert */
+    --card-color-4: #c9e265; /* Jaune-vert */
+    --card-color-5: #ffcc99; /* Pêche */
+    --card-color-6: #99cccc; /* Turquoise */
 }
 
 body {
@@ -42,7 +50,7 @@ h1 {
     font-size: 2.5rem;
 }
 
-main {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -69,11 +77,12 @@ main {
 .recipe-card {
     background-color: var(--card-bg-color);
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 15px; /* Arrondir les angles */
     padding: 1.5rem;
     box-shadow: 0 4px 8px var(--box-shadow-color);
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    text-align: center; /* Centrer le texte */
 }
 
 .recipe-card:hover {
@@ -91,17 +100,13 @@ main {
     font-size: 0.9rem;
 }
 
-/* Styles pour les catégories de repas */
-.card-lunch {
-    background-color: var(--lunch-color);
-}
-.card-dinner {
-    background-color: var(--dinner-color);
-}
-/* Le user a mentionné "souper" mais vos données utilisent "Dîner", je l'ai inclus pour la flexibilité. */
-.card-supper {
-    background-color: var(--supper-color);
-}
+/* Nouvelles classes de couleurs de cartes */
+.card-color-1 { background-color: var(--card-color-1); }
+.card-color-2 { background-color: var(--card-color-2); }
+.card-color-3 { background-color: var(--card-color-3); }
+.card-color-4 { background-color: var(--card-color-4); }
+.card-color-5 { background-color: var(--card-color-5); }
+.card-color-6 { background-color: var(--card-color-6); }
 
 /* Styles pour les jours (teintes plus foncées) */
 .card-lundi { background-color: var(--lundi-color); }
@@ -111,7 +116,6 @@ main {
 .card-vendredi { background-color: var(--vendredi-color); }
 .card-samedi { background-color: var(--samedi-color); }
 .card-dimanche { background-color: var(--dimanche-color); }
-
 
 /* Styles de la modale */
 .modal {
