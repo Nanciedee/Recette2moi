@@ -191,3 +191,33 @@ h1 {
 .planification-btn:hover {
     background-color: #e09452; /* Couleur plus foncée au survol */
 }
+
+/* Styles pour les boutons de navigation de semaine */
+#week-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#week-nav button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #6a89cc; /* Bleu clair */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#week-nav button:hover {
+    background-color: #4a69bd; /* Bleu plus foncé au survol */
+    transform: translateY(-2px);
+}
+
+#week-nav button.active {
+    background-color: #4a69bd; /* Couleur active */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
