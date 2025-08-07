@@ -29,8 +29,9 @@
     --card-color-6: #99cccc; /* Turquoise */
 }
 
+/* Styles de base et mise en page */
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--main-bg-color);
     color: var(--text-color);
     margin: 0;
@@ -53,7 +54,7 @@ h1 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem 3rem; /* Ajout d'un padding-bottom de 3rem */
+    padding: 0 1rem 3rem;
 }
 
 .week-section {
@@ -74,10 +75,27 @@ h1 {
     gap: 2rem;
 }
 
+/* Styles pour le bouton de planification */
+.planification-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7a260;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.planification-btn:hover {
+    background-color: #e09452;
+}
+
+/* Styles pour les cartes de recettes */
 .recipe-card {
-    /* Suppression du background-color par défaut */
     border: 1px solid var(--border-color);
-    border-radius: 15px; /* Arrondir les angles */
+    border-radius: 15px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px var(--box-shadow-color);
     transition: transform 0.2s, box-shadow 0.2s;
@@ -117,6 +135,36 @@ h1 {
 .card-samedi { background-color: var(--samedi-color); }
 .card-dimanche { background-color: var(--dimanche-color); }
 
+/* Styles pour les boutons de navigation de semaine */
+#week-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#week-nav button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #6a89cc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#week-nav button:hover {
+    background-color: #4a69bd;
+    transform: translateY(-2px);
+}
+
+#week-nav button.active {
+    background-color: #4a69bd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 /* Styles de la modale */
 .modal {
     display: none;
@@ -132,14 +180,15 @@ h1 {
 }
 
 .modal-content {
-    background-color: var(--card-bg-color);
-    padding: 2rem;
-    border-radius: 8px;
+    background-color: #fff;
+    padding: 2.5rem;
+    border-radius: 15px;
     width: 90%;
-    max-width: 700px;
+    max-width: 800px;
     position: relative;
     max-height: 90vh;
     overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .close-button {
@@ -159,83 +208,6 @@ h1 {
     cursor: pointer;
 }
 
-#recipe-details h2 {
-    color: #4a69bd;
-}
-
-#recipe-details ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#recipe-details ul li {
-    background-color: #f9f9f9;
-    border: 1px solid var(--border-color);
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-    border-radius: 4px;
-}
-
-.planification-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f7a260; /* Une couleur pour le bouton */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.planification-btn:hover {
-    background-color: #e09452; /* Couleur plus foncée au survol */
-}
-
-/* Styles pour les boutons de navigation de semaine */
-#week-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-#week-nav button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: #6a89cc; /* Bleu clair */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-#week-nav button:hover {
-    background-color: #4a69bd; /* Bleu plus foncé au survol */
-    transform: translateY(-2px);
-}
-
-#week-nav button.active {
-    background-color: #4a69bd; /* Couleur active */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Amélioration de la modale */
-.modal-content {
-    background-color: #fff;
-    padding: 2.5rem;
-    border-radius: 15px; /* Arrondir plus les coins */
-    width: 90%;
-    max-width: 800px; /* Augmenter la largeur pour plus d'espace */
-    position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
-}
-
-/* Styles pour les titres et le texte dans la modale */
 #recipe-details h2 {
     color: #4a69bd;
     font-size: 2rem;
@@ -258,7 +230,6 @@ h1 {
     line-height: 1.6;
 }
 
-/* Style pour les listes d'ingrédients et d'instructions */
 #recipe-details ul,
 #recipe-details ol {
     padding-left: 20px;
@@ -270,14 +241,8 @@ h1 {
     font-size: 1rem;
     line-height: 1.4;
     margin-bottom: 5px;
-    background-color: #f8f9fa; /* Fond légèrement grisé pour les items de liste */
+    background-color: #f8f9fa;
     border: 1px solid #e9ecef;
     border-radius: 5px;
     padding: 8px 12px;
-}
-
-/* Police de caractères pour tout le corps du document */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* ... le reste du code body ... */
 }
